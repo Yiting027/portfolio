@@ -56,7 +56,7 @@ const skillCategories = [
 const Skills = () => {
   return (
     <section id="skills" className="min-h-screen py-20">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

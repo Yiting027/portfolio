@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <section id="about" className="min-h-screen flex items-center py-20">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ const About = () => {
                     className="absolute w-20 h-20 rounded-full flex items-center justify-center"
                     style={{ background: `linear-gradient(135deg, ${pantone.brightGold} 0%, ${pantone.bronzeGold} 100%)` }}
                   >
-                    <span className="text-4xl font-bold" style={{ color: pantone.navyBlue }}>FT</span>
+                    <span className="text-4xl font-bold" style={{ color: pantone.navyBlue }}>YL</span>
                   </div>
                 </div>
 

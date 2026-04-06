@@ -50,7 +50,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="min-h-screen py-20 flex items-center">
-      <div className="max-w-5xl mx-auto px-4 w-full">
+      <div className="max-w-5xl px-4 lg:px-8 w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

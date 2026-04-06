@@ -21,7 +21,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/Yiting027"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center gap-2"

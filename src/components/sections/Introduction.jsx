@@ -29,7 +29,7 @@ const Introduction = () => {
       <div className="absolute inset-0 tech-grid opacity-30" />
 
       {/* Main Content */}
-      <div className="relative z-10 text-center px-4">
+      <div className="relative z-10 text-left px-4 lg:px-8 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ const Introduction = () => {
 
           {/* Main Heading */}
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-12"
             style={{
               background: `linear-gradient(135deg, #FFFFFF 0%, ${pantone.brightGold} 50%, #FFFFFF 100%)`,
               WebkitBackgroundClip: 'text',
@@ -64,9 +64,7 @@ const Introduction = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Building the
-            <br />
-            <span className="text-glow">Future of Tech</span>
+            <span className="text-glow">Yiting Lin</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -117,27 +115,6 @@ const Introduction = () => {
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.5 }}
-        >
-          <motion.div
-            className="w-6 h-10 rounded-full border-2 flex justify-center pt-2"
-            style={{ borderColor: pantone.brightGold }}
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
-            <motion.div
-              className="w-1.5 h-1.5 rounded-full"
-              style={{ background: pantone.brightGold }}
-              animate={{ opacity: [1, 0.3, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            />
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );
