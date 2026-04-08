@@ -59,7 +59,7 @@ const Experience = () => {
             {experiences.map((exp, index) => (
               <motion.div
                 key={exp.company}
-                className={`relative mb-12 ${index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'} pl-8 md:pl-0`}
+                className={`relative mb-12 ${index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2 md:ml-auto'} pl-8 md:pl-0`}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -79,7 +79,7 @@ const Experience = () => {
                 />
 
                 {/* Content Card */}
-                <div className="tech-card">
+                <div className="tech-card text-left">
                   <div className="flex flex-wrap items-center gap-2 mb-2">
                     <span
                       className="px-3 py-1 rounded-full text-xs font-semibold"
@@ -93,28 +93,28 @@ const Experience = () => {
                   </div>
 
                   <h3
-                    className="text-xl font-bold mb-1"
+                    className="text-xl font-bold mb-1 text-left"
                     style={{ color: '#FFFFFF' }}
                   >
                     {exp.role}
                   </h3>
                   <p
-                    className="text-sm mb-3"
+                    className="text-sm mb-3 text-left"
                     style={{ color: pantone.brightGold }}
                   >
                     {exp.company}
                   </p>
 
-                  <p className="text-sm mb-4" style={{ color: '#9CA3AF' }}>
+                  <p className="text-sm mb-4 text-left" style={{ color: '#9CA3AF' }}>
                     {exp.description}
                   </p>
 
                   {/* Achievements */}
-                  <ul className={`space-y-2 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                  <ul className="space-y-2">
                     {exp.achievements.map((achievement, i) => (
                       <motion.li
                         key={i}
-                        className="flex items-start gap-2 text-sm"
+                        className="flex items-start gap-2 text-sm text-left"
                         style={{ color: '#E0E0E0' }}
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -127,7 +127,7 @@ const Experience = () => {
                         >
                           ▸
                         </span>
-                        <span className={index % 2 === 0 ? 'md:order-first' : ''}>
+                        <span>
                           {achievement}
                         </span>
                       </motion.li>

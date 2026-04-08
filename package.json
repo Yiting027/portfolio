@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npx vite",
     "clean": "powershell -Command \"Remove-Item -Recurse -Force node_modules, package-lock.json; npm install\"",
     "build": "vite build",
     "lint": "eslint .",

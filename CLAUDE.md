@@ -38,3 +38,10 @@ src/
 - Colors are centralized in `src/theme/colors.js` - use `pantone` and `theme` exports instead of hardcoded values
 - Components are organized via barrel exports in `components/index.js` and `components/sections/index.js`
 - ESLint rule: uppercase vars (`^[A-Z_]`) are allowed for unused vars (useful for React component destructuring)
+
+### Additional Context
+
+- **Entry point**: `src/main.jsx` renders App with StrictMode
+- **Global styles**: `src/index.css` contains Tailwind v4 imports and custom CSS (tech-grid, particle animations)
+- **Animation pattern**: `CurtainIntro` component handles entrance animation; `framer-motion` for micro-interactions
+- **Responsive navigation**: Collapsible sidebar (auto-open on lg screens, toggle on mobile)

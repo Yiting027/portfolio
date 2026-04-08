@@ -38,9 +38,12 @@ const Projects = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <motion.div
+              <motion.a
                 key={project.title}
-                className="tech-card group cursor-pointer"
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tech-card group cursor-pointer block no-underline"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -96,7 +99,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
 

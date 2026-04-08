@@ -142,7 +142,7 @@ const TopBar = ({ onMenuClick, onNavigate, onSearchNavigate }) => {
         {/* Center: Quick Links (Desktop) */}
         <nav className="hidden md:flex items-center gap-6">
           <motion.a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/yiting-lin-a48350133/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium transition-colors"
@@ -152,7 +152,7 @@ const TopBar = ({ onMenuClick, onNavigate, onSearchNavigate }) => {
             LinkedIn
           </motion.a>
           <motion.a
-            href="https://github.com"
+            href="https://github.com/Yiting027"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium transition-colors"
@@ -232,14 +232,14 @@ const TopBar = ({ onMenuClick, onNavigate, onSearchNavigate }) => {
           >
             <div className="flex gap-4 justify-center">
               <button
-                onClick={() => handleQuickLink('https://linkedin.com')}
+                onClick={() => handleQuickLink('https://www.linkedin.com/in/yiting-lin-a48350133/')}
                 className="px-4 py-2 rounded text-sm"
                 style={{ background: `${pantone.brightGold}20`, color: pantone.brightGold }}
               >
                 LinkedIn
               </button>
               <button
-                onClick={() => handleQuickLink('https://github.com')}
+                onClick={() => handleQuickLink('https://github.com/Yiting027')}
                 className="px-4 py-2 rounded text-sm"
                 style={{ background: `${pantone.brightGold}20`, color: pantone.brightGold }}
               >

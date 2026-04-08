@@ -55,10 +55,7 @@ const Introduction = () => {
           <motion.h1
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-12"
             style={{
-              background: `linear-gradient(135deg, #FFFFFF 0%, ${pantone.brightGold} 50%, #FFFFFF 100%)`,
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
+              color: pantone.brightGold,
             }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

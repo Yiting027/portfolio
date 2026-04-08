@@ -63,7 +63,7 @@ const InteractiveSidebar = ({ isOpen, onClose, activeSection, onNavigate }) => {
                 background: `linear-gradient(135deg, ${pantone.brightGold} 0%, ${pantone.bronzeGold} 100%)`,
               }}
             >
-              <span className="text-xl font-bold" style={{ color: pantone.navyBlue }}>F</span>
+              <span className="text-xl font-bold" style={{ color: pantone.navyBlue }}>Y</span>
             </div>
             <div>
               <h2 className="text-lg font-bold text-white">Yiting Lin</h2>
